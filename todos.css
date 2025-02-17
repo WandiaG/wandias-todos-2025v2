@@ -1,0 +1,13 @@
+:root{
+    --background-color: #050303;
+    --primary-color: #181818 ;
+    --pink-color: #ef2d56 ;
+    --secondary-color: #404048;
+    --text-color: #bfc0c0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
