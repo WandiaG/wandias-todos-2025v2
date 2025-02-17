@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="index1.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body class="gap-8 text-[var(--text-color)] min-h-screen w-screen bg-[var(--background-color)] flex items-center justify-center flex-col">
+  <h1 class="text-3xl font-bold text-[var(--pink-color)]">
+    Wandia's Todo 2025 
+  </h1>
+  <div class="divide-y divide-[var(--pink-color)] w-[fit] bg-[var(--primary-color)] p-4 rounded-lg flex items-center justify-center gap-5 flex-col">
+    <div class="flex items-center justify-between gap-3">
+      <div class="p-2  border-2 border-[var(--secondary-color)] flex items-center justify-center flex-col">
+        <div class="flex items-center justify-center gap-2">
+          <div class="flex items-center justify-center flex-col">
+            <h1 class="text-2xl font-bold text-[var(--pink-color)]">
+              Tasks Done
+            </h1>
+            <p class="text-lg ">
+              keep it up!
+            </p>
+          </div>
+          <div class="flex items-center justify-center font-bold text-xl px-3 py-2 rounded-[50%] bg-[--secondary-color] text-[--pink-color]">
+            <p class="" id="numbers"> 2 / 3</p>
+          </div>
+        </div>
+
+          <div id="progressBar" class="relative w-[200px] h-[10px]  bg-[--secondary-color] rounded-xl">
+            <h1 class="absolute -right-2 -top-2 text-[--pink-color] font-bold">%</h1>
+            <div id="progress" class="absolute top-0 left-0 w-[80%] h-[10px] bg-[--pink-color] rounded-xl text-right"></div>
+          </div>
+      
+      </div>
+      <div class="flex items-center justify-center gap-2 flex-col">
+        <div class="flex items-center justify-between gap-2">
+              <input class=" bg-[var(--seconday-color)] text-[var(--text-color)] rounded-xl text-xl" type="date" name="date" id="date-time">
+              <button class="px-2 py-2 rounded-xl bg-[var(--pink-color)] tracking-tight" type="submit">Search-Task</button>
+          </div>
+          <div class="flex items-center justify-between gap-2">
+              <input class="border bg-[var(--seconday-color)] rounded-lg p-2 caret-[var(--pink-color)]" placeholder="Please Type a New Task" type="text" name="" id="task-input" autocomplete="off">
+              <button id="add-task" class="rounded-lg p-2 tracking-tight bg-[var(--pink-color)]">Add Task</button>
+          </div>
+      </div>
+      
+    </div>  
+      
+    <ul id="task-UL">
+      <!-- List items will be appended here by JavaScript -->
+    </ul>
+    <div class="flex items-center justify-center gap-2">
+        <button id="prev-page" class="px-2 py-2 rounded-xl bg-[var(--pink-color)] tracking-tight">Previous</button>
+        <button id="next-page" class="px-2 py-2 rounded-xl bg-[var(--pink-color)] tracking-tight">Next</button>
+    </div>
+  </div>
+</body>
+</html>
